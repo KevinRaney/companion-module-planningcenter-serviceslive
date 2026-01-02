@@ -39,7 +39,7 @@ module.exports = {
           .then(function (result) {
             self.updateStatus(
               InstanceStatus.Ok,
-              "Processing Oranization data...",
+              "Processing Organization data...",
             );
             if (
               result.data &&
