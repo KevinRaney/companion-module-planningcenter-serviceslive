@@ -1,25 +1,25 @@
 {
-	"name": "planningcenter-serviceslive",
-	"version": "2.6.0",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"format": "prettier --write ."
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-planningcenter-serviceslive.git"
-	},
-	"license": "MIT",
-	"dependencies": {
-		"@companion-module/base": "^1.12.1",
-		"companion-module-utils": "^0.5.0",
-		"file-type": "^20.4.1",
-		"jimp": "^1.6.0",
-		"node-rest-client": "^3.1.1"
-	},
-	"devDependencies": {
-		"@companion-module/tools": "^2.3.0",
-		"prettier": "^3.5.3"
-	}
+  "name": "planningcenter-serviceslive",
+  "version": "2.6.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitfocus/companion-module-planningcenter-serviceslive.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@companion-module/base": "^1.12.1",
+    "companion-module-utils": "^0.5.0",
+    "file-type": "^20.4.1",
+    "jimp": "^1.6.0",
+    "node-rest-client": "^3.1.1"
+  },
+  "devDependencies": {
+    "@companion-module/tools": "^2.3.0",
+    "prettier": "^3.5.3"
+  }
 }
