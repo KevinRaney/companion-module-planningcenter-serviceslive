@@ -6,8 +6,19 @@ const baseAPIUrl = "https://api.planningcenteronline.com/services/v2";
 
 const { Jimp } = require("jimp");
 
-// Status priority order for team position sorting: Confirmed, Unconfirmed, Declined
+/**
+ * Status priority order for team position sorting
+ * C = Confirmed (priority 0)
+ * U = Unconfirmed/Maybe (priority 1)
+ * D = Declined (priority 2)
+ */
 const STATUS_ORDER = { C: 0, U: 1, D: 2 };
+
+/**
+ * Fallback priority for unknown status values
+ * Any unknown status will be sorted after C, U, D statuses
+ */
+const STATUS_ORDER_UNKNOWN = 3;
 
 module.exports = {
   initPCOLive: function () {
@@ -1130,9 +1141,8 @@ module.exports = {
 
       // Sort newScheduledPeople by status (C, U, D), then by teamName, then by positionName
       newScheduledPeople.sort((a, b) => {
-        // Use status priority: C=0, U=1, D=2
-        const statusA = STATUS_ORDER[a.status] ?? 3;
-        const statusB = STATUS_ORDER[b.status] ?? 3;
+        const statusA = STATUS_ORDER[a.status] ?? STATUS_ORDER_UNKNOWN;
+        const statusB = STATUS_ORDER[b.status] ?? STATUS_ORDER_UNKNOWN;
 
         const statusDiff = statusA - statusB;
         if (statusDiff !== 0) return statusDiff;
