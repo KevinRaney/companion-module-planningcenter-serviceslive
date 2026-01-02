@@ -1,26 +1,26 @@
 {
-	"id": "planningcenter-serviceslive",
-	"name": "planningcenter-serviceslive",
-	"shortname": "services-live",
-	"description": "",
-	"version": "0.0.0",
-	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-planningcenter-serviceslive.git",
-	"bugs": "https://github.com/bitfocus/companion-module-planningcenter-serviceslive/issues",
-	"maintainers": [
-		{
-			"name": "Joseph Adams",
-			"email": "joseph@josephadams.dev"
-		}
-	],
-	"legacyIds": [],
-	"runtime": {
-		"type": "node22",
-		"api": "nodejs-ipc",
-		"apiVersion": "0.0.0",
-		"entrypoint": "../index.js"
-	},
-	"manufacturer": "Planning Center Online",
-	"products": ["Services Live"],
-	"keywords": ["Show Control", "PCO"]
+  "id": "planningcenter-serviceslive",
+  "name": "planningcenter-serviceslive",
+  "shortname": "services-live",
+  "description": "",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "git+https://github.com/bitfocus/companion-module-planningcenter-serviceslive.git",
+  "bugs": "https://github.com/bitfocus/companion-module-planningcenter-serviceslive/issues",
+  "maintainers": [
+    {
+      "name": "Joseph Adams",
+      "email": "joseph@josephadams.dev"
+    }
+  ],
+  "legacyIds": [],
+  "runtime": {
+    "type": "node22",
+    "api": "nodejs-ipc",
+    "apiVersion": "0.0.0",
+    "entrypoint": "../index.js"
+  },
+  "manufacturer": "Planning Center Online",
+  "products": ["Services Live"],
+  "keywords": ["Show Control", "PCO"]
 }
